@@ -2242,10 +2242,13 @@ Discarded input sections
  .text          0x0000000000000000        0x0 ./src/UsartConfig.o
  .data          0x0000000000000000        0x0 ./src/UsartConfig.o
  .bss           0x0000000000000000        0x0 ./src/UsartConfig.o
- .debug_info    0x0000000000000000       0x96 ./src/UsartConfig.o
- .debug_abbrev  0x0000000000000000       0x4e ./src/UsartConfig.o
+ .text.Usart1Init
+                0x0000000000000000       0x84 ./src/UsartConfig.o
+ .debug_info    0x0000000000000000      0x8d0 ./src/UsartConfig.o
+ .debug_abbrev  0x0000000000000000      0x17f ./src/UsartConfig.o
  .debug_aranges
-                0x0000000000000000       0x18 ./src/UsartConfig.o
+                0x0000000000000000       0x20 ./src/UsartConfig.o
+ .debug_ranges  0x0000000000000000       0x10 ./src/UsartConfig.o
  .debug_macro   0x0000000000000000      0x2e2 ./src/UsartConfig.o
  .debug_macro   0x0000000000000000      0x87a ./src/UsartConfig.o
  .debug_macro   0x0000000000000000       0x28 ./src/UsartConfig.o
@@ -2302,11 +2305,12 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0xfa ./src/UsartConfig.o
  .debug_macro   0x0000000000000000       0x88 ./src/UsartConfig.o
  .debug_macro   0x0000000000000000      0x126 ./src/UsartConfig.o
- .debug_line    0x0000000000000000      0x6da ./src/UsartConfig.o
- .debug_str     0x0000000000000000    0x7a186 ./src/UsartConfig.o
+ .debug_line    0x0000000000000000      0x6fb ./src/UsartConfig.o
+ .debug_str     0x0000000000000000    0x7a86b ./src/UsartConfig.o
  .comment       0x0000000000000000       0x71 ./src/UsartConfig.o
  .ARM.attributes
                 0x0000000000000000       0x33 ./src/UsartConfig.o
+ .debug_frame   0x0000000000000000       0x34 ./src/UsartConfig.o
  .group         0x0000000000000000        0x8 ./src/_initialize_hardware.o
  .group         0x0000000000000000        0x8 ./src/_initialize_hardware.o
  .group         0x0000000000000000        0x8 ./src/_initialize_hardware.o
