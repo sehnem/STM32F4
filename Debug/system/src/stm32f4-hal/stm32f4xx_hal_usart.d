@@ -1,16 +1,15 @@
-src/main.o: ../src/main.c ../system/include/diag/Trace.h \
- ../include/Timer.h ../system/include/cmsis/cmsis_device.h \
+system/src/stm32f4-hal/stm32f4xx_hal_usart.o: \
+ ../system/src/stm32f4-hal/stm32f4xx_hal_usart.c \
+ ../system/include/stm32f4-hal/stm32f4xx_hal.h \
+ ../include/stm32f4xx_hal_conf.h \
+ ../system/include/stm32f4-hal/stm32f4xx_hal_rcc.h \
+ ../system/include/stm32f4-hal/stm32f4xx_hal_def.h \
  ../system/include/cmsis/stm32f4xx.h \
  ../system/include/cmsis/stm32f407xx.h ../system/include/cmsis/core_cm4.h \
  ../system/include/cmsis/core_cmInstr.h \
  ../system/include/cmsis/core_cmFunc.h \
  ../system/include/cmsis/core_cm4_simd.h \
- ../system/include/cmsis/system_stm32f4xx.h ../include/BlinkLed.h \
- ../system/include/cmsis/stm32f4xx.h \
- ../system/include/stm32f4-hal/stm32f4xx_hal.h \
- ../include/stm32f4xx_hal_conf.h \
- ../system/include/stm32f4-hal/stm32f4xx_hal_rcc.h \
- ../system/include/stm32f4-hal/stm32f4xx_hal_def.h \
+ ../system/include/cmsis/system_stm32f4xx.h \
  ../system/include/stm32f4-hal/stm32f4xx_hal_rcc_ex.h \
  ../system/include/stm32f4-hal/stm32f4xx_hal_gpio.h \
  ../system/include/stm32f4-hal/stm32f4xx_hal_gpio_ex.h \
@@ -60,14 +59,15 @@ src/main.o: ../src/main.c ../system/include/diag/Trace.h \
  ../system/include/stm32f4-hal/stm32f4xx_hal_wwdg.h \
  ../system/include/stm32f4-hal/stm32f4xx_hal_pcd.h \
  ../system/include/stm32f4-hal/stm32f4xx_ll_usb.h \
- ../system/include/stm32f4-hal/stm32f4xx_hal_hcd.h \
- ../include/UsartConfig.h
+ ../system/include/stm32f4-hal/stm32f4xx_hal_hcd.h
 
-../system/include/diag/Trace.h:
+../system/include/stm32f4-hal/stm32f4xx_hal.h:
 
-../include/Timer.h:
+../include/stm32f4xx_hal_conf.h:
 
-../system/include/cmsis/cmsis_device.h:
+../system/include/stm32f4-hal/stm32f4xx_hal_rcc.h:
+
+../system/include/stm32f4-hal/stm32f4xx_hal_def.h:
 
 ../system/include/cmsis/stm32f4xx.h:
 
@@ -82,18 +82,6 @@ src/main.o: ../src/main.c ../system/include/diag/Trace.h \
 ../system/include/cmsis/core_cm4_simd.h:
 
 ../system/include/cmsis/system_stm32f4xx.h:
-
-../include/BlinkLed.h:
-
-../system/include/cmsis/stm32f4xx.h:
-
-../system/include/stm32f4-hal/stm32f4xx_hal.h:
-
-../include/stm32f4xx_hal_conf.h:
-
-../system/include/stm32f4-hal/stm32f4xx_hal_rcc.h:
-
-../system/include/stm32f4-hal/stm32f4xx_hal_def.h:
 
 ../system/include/stm32f4-hal/stm32f4xx_hal_rcc_ex.h:
 
@@ -194,5 +182,3 @@ src/main.o: ../src/main.c ../system/include/diag/Trace.h \
 ../system/include/stm32f4-hal/stm32f4xx_ll_usb.h:
 
 ../system/include/stm32f4-hal/stm32f4xx_hal_hcd.h:
-
-../include/UsartConfig.h:

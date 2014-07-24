@@ -10,6 +10,7 @@
 
 #include "Timer.h"
 #include "BlinkLed.h"
+#include "UsartConfig.h"
 
 // ----------------------------------------------------------------------------
 //
@@ -52,6 +53,7 @@
 int
 main(int argc, char* argv[])
 {
+
   // By customising __initialize_args() it is possible to pass arguments,
   // for example when running tests with semihosting you can pass various
   // options to the test.
@@ -69,6 +71,8 @@ main(int argc, char* argv[])
   // At this stage the system clock should have already been configured
   // at high speed.
   trace_printf("System clock: %uHz\n", SystemCoreClock);
+
+  Usart2Init();
 
   timer_start();
 

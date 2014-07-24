@@ -1,36 +1,38 @@
 #include <UsartConfig.h>
 
-void Usart1Init()
+void Usart2Init()
 {
 	GPIO_InitTypeDef GPIO_InitStructure;
-	USART_InitTypeDef USART_InitStructure;
 	USART_HandleTypeDef USART_Handle;
 
-	//HAL_USART_MspInit(USART_Handle);
+	//Enable Clocks
+	__USART2_CLK_ENABLE();
+	__GPIOA_CLK_ENABLE();
+	__GPIOA_CLK_ENABLE();
 
-	RCC->AHB1ENR |= RCC_AHB1ENR_GPIOCEN << 1; //conferir o número da porta "1"
-	GPIO_InitStructure.Pin = GPIO_PIN_9;
+	GPIO_InitStructure.Pin = GPIO_PIN_2;
 	GPIO_InitStructure.Mode = GPIO_MODE_AF_PP;
+	GPIO_InitStructure.Pull = GPIO_NOPULL;
 	GPIO_InitStructure.Speed = GPIO_SPEED_HIGH;
+	GPIO_InitStructure.Alternate = GPIO_AF7_USART2;
+
 	HAL_GPIO_Init(GPIOA, &GPIO_InitStructure);
 
-	RCC->AHB1ENR |= RCC_AHB1ENR_GPIOCEN << 1; //conferir o número da porta "1"
-	GPIO_InitStructure.Pin = GPIO_PIN_10;
-	GPIO_InitStructure.Mode = GPIO_MODE_INPUT;
+	GPIO_InitStructure.Pin = GPIO_PIN_3;
+	GPIO_InitStructure.Mode = GPIO_MODE_AF_PP;
+	GPIO_InitStructure.Pull = GPIO_NOPULL;
 	GPIO_InitStructure.Speed = GPIO_SPEED_HIGH;
-	HAL_GPIO_Init(GPIOA, &GPIO_InitStructure);
+	GPIO_InitStructure.Alternate = GPIO_AF7_USART2;
 
-	RCC->APB1ENR |= RCC_APB1ENR_USART2EN << 1; //conferir o número da porta "1"
-	USART_InitStructure.BaudRate = 9600;
-	USART_InitStructure.WordLength = USART_WORDLENGTH_8B;
-	USART_InitStructure.StopBits = USART_STOPBITS_1;
-	USART_InitStructure.Parity = USART_PARITY_NONE;
-	USART_InitStructure.Mode = USART_MODE_TX_RX;
+	HAL_GPIO_Init(GPIOA, &GPIO_InitStructure);
 
 	USART_Handle.Instance = USART2;
-	USART_Handle.Init = USART_InitStructure;
+	USART_Handle.Init.BaudRate = 9600;
+	USART_Handle.Init.WordLength = USART_WORDLENGTH_8B;
+	USART_Handle.Init.StopBits = USART_STOPBITS_1;
+	USART_Handle.Init.Parity = USART_PARITY_NONE;
+	USART_Handle.Init.Mode = USART_MODE_TX_RX;
 
 	HAL_USART_Init(&USART_Handle);
-	//HAL_USART_Cmd(USART2, ENABLE);
 
 }

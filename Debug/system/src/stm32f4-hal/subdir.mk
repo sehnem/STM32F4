@@ -13,7 +13,8 @@ C_SRCS += \
 ../system/src/stm32f4-hal/stm32f4xx_hal_pwr.c \
 ../system/src/stm32f4-hal/stm32f4xx_hal_pwr_ex.c \
 ../system/src/stm32f4-hal/stm32f4xx_hal_rcc.c \
-../system/src/stm32f4-hal/stm32f4xx_hal_rcc_ex.c 
+../system/src/stm32f4-hal/stm32f4xx_hal_rcc_ex.c \
+../system/src/stm32f4-hal/stm32f4xx_hal_usart.c 
 
 OBJS += \
 ./system/src/stm32f4-hal/stm32f4xx_hal.o \
@@ -25,7 +26,8 @@ OBJS += \
 ./system/src/stm32f4-hal/stm32f4xx_hal_pwr.o \
 ./system/src/stm32f4-hal/stm32f4xx_hal_pwr_ex.o \
 ./system/src/stm32f4-hal/stm32f4xx_hal_rcc.o \
-./system/src/stm32f4-hal/stm32f4xx_hal_rcc_ex.o 
+./system/src/stm32f4-hal/stm32f4xx_hal_rcc_ex.o \
+./system/src/stm32f4-hal/stm32f4xx_hal_usart.o 
 
 C_DEPS += \
 ./system/src/stm32f4-hal/stm32f4xx_hal.d \
@@ -37,7 +39,8 @@ C_DEPS += \
 ./system/src/stm32f4-hal/stm32f4xx_hal_pwr.d \
 ./system/src/stm32f4-hal/stm32f4xx_hal_pwr_ex.d \
 ./system/src/stm32f4-hal/stm32f4xx_hal_rcc.d \
-./system/src/stm32f4-hal/stm32f4xx_hal_rcc_ex.d 
+./system/src/stm32f4-hal/stm32f4xx_hal_rcc_ex.d \
+./system/src/stm32f4-hal/stm32f4xx_hal_usart.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
