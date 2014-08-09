@@ -73,6 +73,7 @@ main(int argc, char* argv[])
   trace_printf("System clock: %uHz\n", SystemCoreClock);
 
   Uart2Init();
+  uprintf("Meu Texto\r\nEle sera muito grade\r\nPois e especial!!\r\nObrigado\r\n");
 
   timer_start();
 
