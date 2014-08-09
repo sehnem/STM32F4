@@ -1,5 +1,5 @@
-system/src/stm32f4-hal/stm32f4xx_hal_usart.o: \
- ../system/src/stm32f4-hal/stm32f4xx_hal_usart.c \
+system/src/stm32f4-hal/stm32f4xx_hal_uart.o: \
+ ../system/src/stm32f4-hal/stm32f4xx_hal_uart.c \
  ../system/include/stm32f4-hal/stm32f4xx_hal.h \
  ../include/stm32f4xx_hal_conf.h \
  ../system/include/stm32f4-hal/stm32f4xx_hal_rcc.h \

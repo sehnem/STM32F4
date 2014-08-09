@@ -10,7 +10,7 @@
 
 #include "Timer.h"
 #include "BlinkLed.h"
-#include "UsartConfig.h"
+#include "UartConfig.h"
 
 // ----------------------------------------------------------------------------
 //
@@ -72,7 +72,7 @@ main(int argc, char* argv[])
   // at high speed.
   trace_printf("System clock: %uHz\n", SystemCoreClock);
 
-  Usart2Init();
+  Uart2Init();
 
   timer_start();
 

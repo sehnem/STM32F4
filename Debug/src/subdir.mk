@@ -6,21 +6,21 @@
 C_SRCS += \
 ../src/BlinkLed.c \
 ../src/Timer.c \
-../src/UsartConfig.c \
+../src/UartConfig.c \
 ../src/_initialize_hardware.c \
 ../src/main.c 
 
 OBJS += \
 ./src/BlinkLed.o \
 ./src/Timer.o \
-./src/UsartConfig.o \
+./src/UartConfig.o \
 ./src/_initialize_hardware.o \
 ./src/main.o 
 
 C_DEPS += \
 ./src/BlinkLed.d \
 ./src/Timer.d \
-./src/UsartConfig.d \
+./src/UartConfig.d \
 ./src/_initialize_hardware.d \
 ./src/main.d 
 

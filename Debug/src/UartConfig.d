@@ -1,4 +1,4 @@
-src/UsartConfig.o: ../src/UsartConfig.c ../include/UsartConfig.h \
+src/UartConfig.o: ../src/UartConfig.c ../include/UartConfig.h \
  ../system/include/cmsis/stm32f4xx.h \
  ../system/include/cmsis/stm32f407xx.h ../system/include/cmsis/core_cm4.h \
  ../system/include/cmsis/core_cmInstr.h \
@@ -60,7 +60,7 @@ src/UsartConfig.o: ../src/UsartConfig.c ../include/UsartConfig.h \
  ../system/include/stm32f4-hal/stm32f4xx_ll_usb.h \
  ../system/include/stm32f4-hal/stm32f4xx_hal_hcd.h
 
-../include/UsartConfig.h:
+../include/UartConfig.h:
 
 ../system/include/cmsis/stm32f4xx.h:
 

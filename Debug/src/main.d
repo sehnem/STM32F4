@@ -61,7 +61,7 @@ src/main.o: ../src/main.c ../system/include/diag/Trace.h \
  ../system/include/stm32f4-hal/stm32f4xx_hal_pcd.h \
  ../system/include/stm32f4-hal/stm32f4xx_ll_usb.h \
  ../system/include/stm32f4-hal/stm32f4xx_hal_hcd.h \
- ../include/UsartConfig.h
+ ../include/UartConfig.h
 
 ../system/include/diag/Trace.h:
 
@@ -195,4 +195,4 @@ src/main.o: ../src/main.c ../system/include/diag/Trace.h \
 
 ../system/include/stm32f4-hal/stm32f4xx_hal_hcd.h:
 
-../include/UsartConfig.h:
+../include/UartConfig.h:
