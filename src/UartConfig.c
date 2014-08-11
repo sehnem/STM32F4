@@ -3,9 +3,9 @@
 USART_HandleTypeDef UART2;
 GPIO_InitTypeDef GPIO_InitStructure;
 
-void HAL_UART_MspInit(UART_HandleTypeDef* huart)
+void HAL_UART_MspInit(UART_HandleTypeDef* UART2)
 {
-	if(huart->Instance==USART2)
+	if(UART2->Instance==USART2)
 	{
 		/* Peripheral clock enable */
 		__USART2_CLK_ENABLE();
@@ -23,9 +23,9 @@ void HAL_UART_MspInit(UART_HandleTypeDef* huart)
 
 }
 
-void HAL_UART_MspDeInit(UART_HandleTypeDef* huart)
+void HAL_UART_MspDeInit(UART_HandleTypeDef* UART2)
 {
-	if(huart->Instance==USART2)
+	if(UART2->Instance==USART2)
 	{
 		/* Peripheral clock disable */
 		__USART2_CLK_DISABLE();
@@ -52,15 +52,16 @@ void Uart2Init()
 	HAL_UART_Init(&UART2);
 }
 
-int write_console(char * text){
+int uprintf(char * text)
+{
     uint8_t *tmp = (uint8_t*)text;
     while(*tmp != '\0') HAL_UART_Transmit(&UART2, tmp++, 1, 5000);
     return 0;
 }
 
-void uprintf(char * text){
-    write_console((char *)text);
-    HAL_StatusTypeDef HAL_UART_Receive(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
-    return;
-}
+//void uprintf(char * text){
+//    write_console((char *)text);
+//    HAL_StatusTypeDef HAL_UART_Receive(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+//    return;
+//}
 

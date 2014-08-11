@@ -7,6 +7,6 @@
 #include "stm32f4xx_hal.h"
 
 void Uart2Init();
-void uprintf(char * text);
+int uprintf(char * text);
 
 #endif // UARTCONFIG_H_

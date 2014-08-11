@@ -2992,7 +2992,7 @@ END GROUP
  *(.flashtext .flashtext.*)
                 0x00000000080002c4                . = ALIGN (0x4)
 
-.text           0x00000000080002c4     0x20c5
+.text           0x00000000080002c4     0x20bd
                 0x00000000080002c4                . = ALIGN (0x4)
  *(.text .text.*)
  .text.HAL_MspInit
@@ -3088,106 +3088,103 @@ END GROUP
  .text.Uart2Init
                 0x00000000080017bc       0x34 ./src/UartConfig.o
                 0x00000000080017bc                Uart2Init
- .text.write_console
-                0x00000000080017f0       0x2c ./src/UartConfig.o
-                0x00000000080017f0                write_console
- .text.uprintf  0x000000000800181c        0x8 ./src/UartConfig.o
-                0x000000000800181c                uprintf
+ .text.uprintf  0x00000000080017f0       0x2c ./src/UartConfig.o
+                0x00000000080017f0                uprintf
  .text.configure_system_clock
-                0x0000000008001824       0x68 ./src/_initialize_hardware.o
-                0x0000000008001824                configure_system_clock
+                0x000000000800181c       0x68 ./src/_initialize_hardware.o
+                0x000000000800181c                configure_system_clock
  .text.__initialize_hardware
-                0x000000000800188c       0x10 ./src/_initialize_hardware.o
-                0x000000000800188c                __initialize_hardware
- .text.main     0x000000000800189c       0x74 ./src/main.o
-                0x000000000800189c                main
- .text.__errno  0x0000000008001910        0xc /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-errno.o)
-                0x0000000008001910                __errno
- .text.strlen   0x000000000800191c       0x10 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-strlen.o)
-                0x000000000800191c                strlen
+                0x0000000008001884       0x10 ./src/_initialize_hardware.o
+                0x0000000008001884                __initialize_hardware
+ .text.main     0x0000000008001894       0x74 ./src/main.o
+                0x0000000008001894                main
+ .text.__errno  0x0000000008001908        0xc /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-errno.o)
+                0x0000000008001908                __errno
+ .text.strlen   0x0000000008001914       0x10 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-strlen.o)
+                0x0000000008001914                strlen
  .text._vsnprintf_r
-                0x000000000800192c       0x52 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-vsnprintf.o)
-                0x000000000800192c                _vsnprintf_r
-                0x000000000800192c                _vsniprintf_r
- *fill*         0x000000000800197e        0x2 
+                0x0000000008001924       0x52 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-vsnprintf.o)
+                0x0000000008001924                _vsnprintf_r
+                0x0000000008001924                _vsniprintf_r
+ *fill*         0x0000000008001976        0x2 
  .text.vsnprintf
-                0x0000000008001980       0x20 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-vsnprintf.o)
-                0x0000000008001980                vsnprintf
-                0x0000000008001980                vsniprintf
+                0x0000000008001978       0x20 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-vsnprintf.o)
+                0x0000000008001978                vsnprintf
+                0x0000000008001978                vsniprintf
  .text.__ssputs_r
-                0x00000000080019a0       0xb8 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-svfprintf.o)
-                0x00000000080019a0                __ssputs_r
+                0x0000000008001998       0xb8 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-svfprintf.o)
+                0x0000000008001998                __ssputs_r
  .text._svfprintf_r
-                0x0000000008001a58      0x1dc /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-svfprintf.o)
-                0x0000000008001a58                _svfprintf_r
-                0x0000000008001a58                _svfiprintf_r
+                0x0000000008001a50      0x1dc /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-svfprintf.o)
+                0x0000000008001a50                _svfprintf_r
+                0x0000000008001a50                _svfiprintf_r
  .text._printf_common
-                0x0000000008001c34       0xe4 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-vfprintf_i.o)
-                0x0000000008001c34                _printf_common
+                0x0000000008001c2c       0xe4 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-vfprintf_i.o)
+                0x0000000008001c2c                _printf_common
  .text._printf_i
-                0x0000000008001d18      0x228 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-vfprintf_i.o)
-                0x0000000008001d18                _printf_i
- .text.memchr   0x0000000008001f40       0x1e /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-memchr-stub.o)
-                0x0000000008001f40                memchr
- .text.memcpy   0x0000000008001f5e       0x12 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-memcpy-stub.o)
-                0x0000000008001f5e                memcpy
- .text.memmove  0x0000000008001f70       0x36 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-memmove.o)
-                0x0000000008001f70                memmove
- *fill*         0x0000000008001fa6        0x2 
- .text._free_r  0x0000000008001fa8       0x88 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-nano-freer.o)
-                0x0000000008001fa8                _free_r
+                0x0000000008001d10      0x228 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-vfprintf_i.o)
+                0x0000000008001d10                _printf_i
+ .text.memchr   0x0000000008001f38       0x1e /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-memchr-stub.o)
+                0x0000000008001f38                memchr
+ .text.memcpy   0x0000000008001f56       0x12 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-memcpy-stub.o)
+                0x0000000008001f56                memcpy
+ .text.memmove  0x0000000008001f68       0x36 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-memmove.o)
+                0x0000000008001f68                memmove
+ *fill*         0x0000000008001f9e        0x2 
+ .text._free_r  0x0000000008001fa0       0x88 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-nano-freer.o)
+                0x0000000008001fa0                _free_r
  .text._malloc_r
-                0x0000000008002030       0xa8 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-nano-mallocr.o)
-                0x0000000008002030                _malloc_r
+                0x0000000008002028       0xa8 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-nano-mallocr.o)
+                0x0000000008002028                _malloc_r
  .text._realloc_r
-                0x00000000080020d8       0x4c /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-nano-reallocr.o)
-                0x00000000080020d8                _realloc_r
- .text._sbrk_r  0x0000000008002124       0x20 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-sbrkr.o)
-                0x0000000008002124                _sbrk_r
+                0x00000000080020d0       0x4c /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-nano-reallocr.o)
+                0x00000000080020d0                _realloc_r
+ .text._sbrk_r  0x000000000800211c       0x20 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-sbrkr.o)
+                0x000000000800211c                _sbrk_r
  .text._malloc_usable_size_r
-                0x0000000008002144       0x12 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-nano-msizer.o)
-                0x0000000008002144                _malloc_usable_size_r
+                0x000000000800213c       0x12 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-nano-msizer.o)
+                0x000000000800213c                _malloc_usable_size_r
  *(.rodata .rodata.*)
- *fill*         0x0000000008002156        0x2 
+ *fill*         0x000000000800214e        0x2 
  .rodata.str1.4
-                0x0000000008002158       0x31 ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o
+                0x0000000008002150       0x31 ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o
                                          0x34 (size before relaxing)
- *fill*         0x0000000008002189        0x3 
+ *fill*         0x0000000008002181        0x3 
  .rodata.str1.4
-                0x000000000800218c       0x2f ./system/src/stm32f4-hal/stm32f4xx_hal_gpio.o
+                0x0000000008002184       0x2f ./system/src/stm32f4-hal/stm32f4xx_hal_gpio.o
                                          0x30 (size before relaxing)
- *fill*         0x00000000080021bb        0x1 
+ *fill*         0x00000000080021b3        0x1 
  .rodata.APBAHBPrescTable
-                0x00000000080021bc       0x10 ./system/src/stm32f4-hal/stm32f4xx_hal_rcc.o
-                0x00000000080021bc                APBAHBPrescTable
+                0x00000000080021b4       0x10 ./system/src/stm32f4-hal/stm32f4xx_hal_rcc.o
+                0x00000000080021b4                APBAHBPrescTable
  .rodata.str1.4
-                0x00000000080021cc       0x2e ./system/src/stm32f4-hal/stm32f4xx_hal_rcc.o
+                0x00000000080021c4       0x2e ./system/src/stm32f4-hal/stm32f4xx_hal_rcc.o
                                          0x30 (size before relaxing)
- *fill*         0x00000000080021fa        0x2 
+ *fill*         0x00000000080021f2        0x2 
  .rodata.str1.4
-                0x00000000080021fc       0x2f ./system/src/stm32f4-hal/stm32f4xx_hal_uart.o
+                0x00000000080021f4       0x2f ./system/src/stm32f4-hal/stm32f4xx_hal_uart.o
                                          0x30 (size before relaxing)
- *fill*         0x000000000800222b        0x1 
+ *fill*         0x0000000008002223        0x1 
  .rodata.str1.4
-                0x000000000800222c       0x14 ./system/src/newlib/_exit.o
+                0x0000000008002224       0x14 ./system/src/newlib/_exit.o
  .rodata.str1.4
-                0x0000000008002240       0x6b ./system/src/newlib/assert.o
+                0x0000000008002238       0x6b ./system/src/newlib/assert.o
                                          0x70 (size before relaxing)
- *fill*         0x00000000080022ab        0x1 
+ *fill*         0x00000000080022a3        0x1 
  .rodata.str1.4
-                0x00000000080022ac       0x2d ./system/src/diag/Trace.o
+                0x00000000080022a4       0x2d ./system/src/diag/Trace.o
                                          0x30 (size before relaxing)
- *fill*         0x00000000080022d9        0x3 
+ *fill*         0x00000000080022d1        0x3 
  .rodata.str1.4
-                0x00000000080022dc        0x4 ./system/src/diag/trace_impl.o
+                0x00000000080022d4        0x4 ./system/src/diag/trace_impl.o
  .rodata.str1.4
-                0x00000000080022e0       0x74 ./src/main.o
+                0x00000000080022d8       0x74 ./src/main.o
  .rodata.str1.1
-                0x0000000008002354        0x2 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-impure.o)
+                0x000000000800234c        0x2 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-impure.o)
  .rodata.str1.1
-                0x0000000008002356       0x11 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-svfprintf.o)
+                0x000000000800234e       0x11 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-svfprintf.o)
  .rodata.str1.1
-                0x0000000008002367       0x22 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-vfprintf_i.o)
+                0x000000000800235f       0x22 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-vfprintf_i.o)
  *(vtable)
  *(.eh_frame*)
  *(.glue_7)
@@ -3195,31 +3192,31 @@ END GROUP
  *(.glue_7t)
  .glue_7t       0x0000000000000000        0x0 linker stubs
 
-.vfp11_veneer   0x000000000800238c        0x0
+.vfp11_veneer   0x0000000008002384        0x0
  .vfp11_veneer  0x0000000000000000        0x0 linker stubs
 
-.v4_bx          0x000000000800238c        0x0
+.v4_bx          0x0000000008002384        0x0
  .v4_bx         0x0000000000000000        0x0 linker stubs
 
-.iplt           0x000000000800238c        0x0
+.iplt           0x0000000008002384        0x0
  .iplt          0x0000000000000000        0x0 ./system/src/stm32f4-hal/stm32f4xx_hal.o
 
-.rel.dyn        0x000000000800238c        0x0
+.rel.dyn        0x0000000008002384        0x0
  .rel.iplt      0x0000000000000000        0x0 ./system/src/stm32f4-hal/stm32f4xx_hal.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x000000000800238c                __exidx_start = .
+                0x0000000008002384                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x000000000800238c                __exidx_end = .
-                0x000000000800238c                . = ALIGN (0x4)
-                0x000000000800238c                _etext = .
-                0x000000000800238c                __etext = .
-                0x000000000800238c                _sidata = _etext
+                0x0000000008002384                __exidx_end = .
+                0x0000000008002384                . = ALIGN (0x4)
+                0x0000000008002384                _etext = .
+                0x0000000008002384                __etext = .
+                0x0000000008002384                _sidata = _etext
 
-.data           0x0000000020000000       0x78 load address 0x000000000800238c
+.data           0x0000000020000000       0x78 load address 0x0000000008002384
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sdata = .
                 0x0000000020000000                __data_start__ = .
@@ -3242,10 +3239,10 @@ END GROUP
                 0x0000000020000078                _edata = .
                 0x0000000020000078                __data_end__ = .
 
-.igot.plt       0x0000000020000078        0x0 load address 0x0000000008002404
+.igot.plt       0x0000000020000078        0x0 load address 0x00000000080023fc
  .igot.plt      0x0000000000000000        0x0 ./system/src/stm32f4-hal/stm32f4xx_hal.o
 
-.bss            0x0000000020000078       0xfc load address 0x0000000008002404
+.bss            0x0000000020000078       0xfc load address 0x00000000080023fc
                 0x0000000020000078                . = ALIGN (0x4)
                 0x0000000020000078                __bss_start__ = .
                 0x0000000020000078                _sbss = .
@@ -3291,7 +3288,7 @@ END GROUP
                 0x0000000020000174                PROVIDE (__end, _end_noinit)
                 0x0000000020000174                PROVIDE (__end__, _end_noinit)
 
-._check_stack   0x0000000020000174      0x100 load address 0x0000000008002500
+._check_stack   0x0000000020000174      0x100 load address 0x00000000080024f8
                 0x0000000020000174                . = ALIGN (0x4)
                 0x0000000020000274                . = (. + _Minimum_Stack_Size)
  *fill*         0x0000000020000174      0x100 
@@ -3447,7 +3444,7 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x0000000000000000      0x6b0
+.debug_aranges  0x0000000000000000      0x6a8
  *(.debug_aranges)
  .debug_aranges
                 0x0000000000000000       0xa8 ./system/src/stm32f4-hal/stm32f4xx_hal.o
@@ -3482,16 +3479,16 @@ END GROUP
  .debug_aranges
                 0x00000000000005f0       0x38 ./src/Timer.o
  .debug_aranges
-                0x0000000000000628       0x40 ./src/UartConfig.o
+                0x0000000000000628       0x38 ./src/UartConfig.o
  .debug_aranges
-                0x0000000000000668       0x28 ./src/_initialize_hardware.o
+                0x0000000000000660       0x28 ./src/_initialize_hardware.o
  .debug_aranges
-                0x0000000000000690       0x20 ./src/main.o
+                0x0000000000000688       0x20 ./src/main.o
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x0000000000000000     0x8001
+.debug_info     0x0000000000000000     0x7fab
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x0000000000000000      0x577 ./system/src/stm32f4-hal/stm32f4xx_hal.o
  .debug_info    0x0000000000000577      0xd95 ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o
@@ -3509,11 +3506,11 @@ END GROUP
  .debug_info    0x0000000000005f84      0x4a7 ./system/src/cmsis/system_stm32f4xx.o
  .debug_info    0x000000000000642b       0x92 ./system/src/cmsis/vectors_stm32f4xx.o
  .debug_info    0x00000000000064bd      0x72f ./src/Timer.o
- .debug_info    0x0000000000006bec      0xba8 ./src/UartConfig.o
- .debug_info    0x0000000000007794      0x4c6 ./src/_initialize_hardware.o
- .debug_info    0x0000000000007c5a      0x3a7 ./src/main.o
+ .debug_info    0x0000000000006bec      0xb4e ./src/UartConfig.o
+ .debug_info    0x000000000000773a      0x4c6 ./src/_initialize_hardware.o
+ .debug_info    0x0000000000007c00      0x3ab ./src/main.o
 
-.debug_abbrev   0x0000000000000000     0x1d4a
+.debug_abbrev   0x0000000000000000     0x1d22
  *(.debug_abbrev)
  .debug_abbrev  0x0000000000000000      0x1b0 ./system/src/stm32f4-hal/stm32f4xx_hal.o
  .debug_abbrev  0x00000000000001b0      0x2a9 ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o
@@ -3531,11 +3528,11 @@ END GROUP
  .debug_abbrev  0x00000000000014aa      0x104 ./system/src/cmsis/system_stm32f4xx.o
  .debug_abbrev  0x00000000000015ae       0x92 ./system/src/cmsis/vectors_stm32f4xx.o
  .debug_abbrev  0x0000000000001640      0x1b3 ./src/Timer.o
- .debug_abbrev  0x00000000000017f3      0x1f0 ./src/UartConfig.o
- .debug_abbrev  0x00000000000019e3      0x17e ./src/_initialize_hardware.o
- .debug_abbrev  0x0000000000001b61      0x1e9 ./src/main.o
+ .debug_abbrev  0x00000000000017f3      0x1db ./src/UartConfig.o
+ .debug_abbrev  0x00000000000019ce      0x17e ./src/_initialize_hardware.o
+ .debug_abbrev  0x0000000000001b4c      0x1d6 ./src/main.o
 
-.debug_line     0x0000000000000000     0x64b0
+.debug_line     0x0000000000000000     0x64a0
  *(.debug_line)
  .debug_line    0x0000000000000000      0x82a ./system/src/stm32f4-hal/stm32f4xx_hal.o
  .debug_line    0x000000000000082a      0x896 ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o
@@ -3553,11 +3550,11 @@ END GROUP
  .debug_line    0x000000000000446d      0x715 ./system/src/cmsis/system_stm32f4xx.o
  .debug_line    0x0000000000004b82       0x89 ./system/src/cmsis/vectors_stm32f4xx.o
  .debug_line    0x0000000000004c0b      0x234 ./src/Timer.o
- .debug_line    0x0000000000004e3f      0x743 ./src/UartConfig.o
- .debug_line    0x0000000000005582      0x708 ./src/_initialize_hardware.o
- .debug_line    0x0000000000005c8a      0x826 ./src/main.o
+ .debug_line    0x0000000000004e3f      0x733 ./src/UartConfig.o
+ .debug_line    0x0000000000005572      0x708 ./src/_initialize_hardware.o
+ .debug_line    0x0000000000005c7a      0x826 ./src/main.o
 
-.debug_frame    0x0000000000000000     0x113c
+.debug_frame    0x0000000000000000     0x1124
  *(.debug_frame)
  .debug_frame   0x0000000000000000      0x14c ./system/src/stm32f4-hal/stm32f4xx_hal.o
  .debug_frame   0x000000000000014c      0x134 ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o
@@ -3575,24 +3572,24 @@ END GROUP
  .debug_frame   0x0000000000000ccc       0x30 ./system/src/cmsis/system_stm32f4xx.o
  .debug_frame   0x0000000000000cfc       0x20 ./system/src/cmsis/vectors_stm32f4xx.o
  .debug_frame   0x0000000000000d1c       0x58 ./src/Timer.o
- .debug_frame   0x0000000000000d74       0x90 ./src/UartConfig.o
- .debug_frame   0x0000000000000e04       0x44 ./src/_initialize_hardware.o
- .debug_frame   0x0000000000000e48       0x30 ./src/main.o
- .debug_frame   0x0000000000000e78       0x20 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-errno.o)
- .debug_frame   0x0000000000000e98       0x20 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-strlen.o)
- .debug_frame   0x0000000000000eb8       0x4c /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-vsnprintf.o)
- .debug_frame   0x0000000000000f04       0x88 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-svfprintf.o)
- .debug_frame   0x0000000000000f8c       0x60 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-vfprintf_i.o)
- .debug_frame   0x0000000000000fec       0x28 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-memchr-stub.o)
- .debug_frame   0x0000000000001014       0x28 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-memcpy-stub.o)
- .debug_frame   0x000000000000103c       0x2c /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-memmove.o)
- .debug_frame   0x0000000000001068       0x2c /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-nano-freer.o)
- .debug_frame   0x0000000000001094       0x2c /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-nano-mallocr.o)
- .debug_frame   0x00000000000010c0       0x30 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-nano-reallocr.o)
- .debug_frame   0x00000000000010f0       0x2c /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-sbrkr.o)
- .debug_frame   0x000000000000111c       0x20 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-nano-msizer.o)
+ .debug_frame   0x0000000000000d74       0x78 ./src/UartConfig.o
+ .debug_frame   0x0000000000000dec       0x44 ./src/_initialize_hardware.o
+ .debug_frame   0x0000000000000e30       0x30 ./src/main.o
+ .debug_frame   0x0000000000000e60       0x20 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-errno.o)
+ .debug_frame   0x0000000000000e80       0x20 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-strlen.o)
+ .debug_frame   0x0000000000000ea0       0x4c /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-vsnprintf.o)
+ .debug_frame   0x0000000000000eec       0x88 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-svfprintf.o)
+ .debug_frame   0x0000000000000f74       0x60 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-vfprintf_i.o)
+ .debug_frame   0x0000000000000fd4       0x28 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-memchr-stub.o)
+ .debug_frame   0x0000000000000ffc       0x28 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x0000000000001024       0x2c /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-memmove.o)
+ .debug_frame   0x0000000000001050       0x2c /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-nano-freer.o)
+ .debug_frame   0x000000000000107c       0x2c /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-nano-mallocr.o)
+ .debug_frame   0x00000000000010a8       0x30 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-nano-reallocr.o)
+ .debug_frame   0x00000000000010d8       0x2c /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-sbrkr.o)
+ .debug_frame   0x0000000000001104       0x20 /usr/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg_s.a(lib_a-nano-msizer.o)
 
-.debug_str      0x0000000000000000    0x81f03
+.debug_str      0x0000000000000000    0x81ef5
  *(.debug_str)
  .debug_str     0x0000000000000000    0x7a5d1 ./system/src/stm32f4-hal/stm32f4xx_hal.o
                                       0x7a777 (size before relaxing)
@@ -3626,14 +3623,14 @@ END GROUP
                                        0x24e6 (size before relaxing)
  .debug_str     0x0000000000081ad3       0x76 ./src/Timer.o
                                       0x3cc24 (size before relaxing)
- .debug_str     0x0000000000081b49      0x205 ./src/UartConfig.o
-                                      0x7aa52 (size before relaxing)
- .debug_str     0x0000000000081d4e       0x35 ./src/_initialize_hardware.o
+ .debug_str     0x0000000000081b49      0x1f7 ./src/UartConfig.o
+                                      0x7aa2d (size before relaxing)
+ .debug_str     0x0000000000081d40       0x35 ./src/_initialize_hardware.o
                                       0x7a45a (size before relaxing)
- .debug_str     0x0000000000081d83      0x180 ./src/main.o
+ .debug_str     0x0000000000081d75      0x180 ./src/main.o
                                       0x7d300 (size before relaxing)
 
-.debug_loc      0x0000000000000000     0x2ef4
+.debug_loc      0x0000000000000000     0x2ed3
  *(.debug_loc)
  .debug_loc     0x0000000000000000       0x1f ./system/src/stm32f4-hal/stm32f4xx_hal.o
  .debug_loc     0x000000000000001f      0x63b ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o
@@ -3648,8 +3645,8 @@ END GROUP
  .debug_loc     0x0000000000002ab8      0x1a5 ./system/src/diag/trace_impl.o
  .debug_loc     0x0000000000002c5d      0x125 ./system/src/cmsis/system_stm32f4xx.o
  .debug_loc     0x0000000000002d82       0x59 ./src/Timer.o
- .debug_loc     0x0000000000002ddb       0xb8 ./src/UartConfig.o
- .debug_loc     0x0000000000002e93       0x61 ./src/main.o
+ .debug_loc     0x0000000000002ddb       0x97 ./src/UartConfig.o
+ .debug_loc     0x0000000000002e72       0x61 ./src/main.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -3667,7 +3664,7 @@ END GROUP
  *(.debug_varnames)
 OUTPUT(test.elf elf32-littlearm)
 
-.debug_ranges   0x0000000000000000      0x5b0
+.debug_ranges   0x0000000000000000      0x5a8
  .debug_ranges  0x0000000000000000       0x98 ./system/src/stm32f4-hal/stm32f4xx_hal.o
  .debug_ranges  0x0000000000000098       0x80 ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o
  .debug_ranges  0x0000000000000118       0x40 ./system/src/stm32f4-hal/stm32f4xx_hal_gpio.o
@@ -3684,9 +3681,9 @@ OUTPUT(test.elf elf32-littlearm)
  .debug_ranges  0x00000000000004f0       0x18 ./system/src/cmsis/system_stm32f4xx.o
  .debug_ranges  0x0000000000000508       0x10 ./system/src/cmsis/vectors_stm32f4xx.o
  .debug_ranges  0x0000000000000518       0x28 ./src/Timer.o
- .debug_ranges  0x0000000000000540       0x30 ./src/UartConfig.o
- .debug_ranges  0x0000000000000570       0x18 ./src/_initialize_hardware.o
- .debug_ranges  0x0000000000000588       0x28 ./src/main.o
+ .debug_ranges  0x0000000000000540       0x28 ./src/UartConfig.o
+ .debug_ranges  0x0000000000000568       0x18 ./src/_initialize_hardware.o
+ .debug_ranges  0x0000000000000580       0x28 ./src/main.o
 
 .debug_macro    0x0000000000000000    0x1460e
  .debug_macro   0x0000000000000000      0x32c ./system/src/stm32f4-hal/stm32f4xx_hal.o
