@@ -1,8 +1,5 @@
 #include <UartConfig.h>
 
-USART_HandleTypeDef UART2;
-GPIO_InitTypeDef GPIO_InitStructure;
-
 void HAL_UART_MspInit(UART_HandleTypeDef* UART2)
 {
 	if(UART2->Instance==USART2)
@@ -50,13 +47,6 @@ void Uart2Init()
 	UART2.Init.Parity = UART_PARITY_NONE;
 	UART2.Init.Mode = UART_MODE_TX_RX;
 	HAL_UART_Init(&UART2);
-}
-
-int uprintf(char * text)
-{
-    uint8_t *tmp = (uint8_t*)text;
-    while(*tmp != '\0') HAL_UART_Transmit(&UART2, tmp++, 1, 5000);
-    return 0;
 }
 
 //void uprintf(char * text){

@@ -6,7 +6,9 @@
 #include "stm32f4xx.h"
 #include "stm32f4xx_hal.h"
 
+UART_HandleTypeDef UART2;
+GPIO_InitTypeDef GPIO_InitStructure;
+
 void Uart2Init();
-int uprintf(char * text);
 
 #endif // UARTCONFIG_H_
