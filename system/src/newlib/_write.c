@@ -6,13 +6,12 @@
 
 int _write(int file, char *ptr, int len)
 {
-	uint8_t *tmp = (uint8_t*)ptr;
     switch (file) {
     case STDOUT_FILENO: /*stdout*/
-    	while(*tmp != '\0') HAL_UART_Transmit(&UART2, tmp++, 1, 5000);
+    	HAL_UART_Transmit(&UART2, ptr, len, 2000);
         break;
     case STDERR_FILENO: /* stderr */
-    	while(*tmp != '\0') HAL_UART_Transmit(&UART2, tmp++, 1, 5000);
+    	HAL_UART_Transmit(&UART2, ptr, len, 2000);
         break;
     default:
         errno = EBADF;

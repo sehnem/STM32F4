@@ -5,6 +5,7 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../system/src/newlib/_exit.c \
+../system/src/newlib/_read.c \
 ../system/src/newlib/_sbrk.c \
 ../system/src/newlib/_startup.c \
 ../system/src/newlib/_syscalls.c \
@@ -17,6 +18,7 @@ CPP_SRCS += \
 OBJS += \
 ./system/src/newlib/_cxx.o \
 ./system/src/newlib/_exit.o \
+./system/src/newlib/_read.o \
 ./system/src/newlib/_sbrk.o \
 ./system/src/newlib/_startup.o \
 ./system/src/newlib/_syscalls.o \
@@ -25,6 +27,7 @@ OBJS += \
 
 C_DEPS += \
 ./system/src/newlib/_exit.d \
+./system/src/newlib/_read.d \
 ./system/src/newlib/_sbrk.d \
 ./system/src/newlib/_startup.d \
 ./system/src/newlib/_syscalls.d \

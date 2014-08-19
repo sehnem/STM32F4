@@ -53,7 +53,7 @@
 int
 main(int argc, char* argv[])
 {
-
+	int num;
   // By customising __initialize_args() it is possible to pass arguments,
   // for example when running tests with semihosting you can pass various
   // options to the test.
@@ -73,7 +73,10 @@ main(int argc, char* argv[])
   trace_printf("System clock: %uHz\n", SystemCoreClock);
 
   Uart2Init();
-  printf("Meu Texto\r\nEle sera muito grade\r\nPois e especial!!\r\nObrigado\r\n");
+
+  printf("Insira um numero: ");
+  scanf("%d", num);
+  printf("O numero inserido foi %d\r\n", num);
 
   timer_start();
 
